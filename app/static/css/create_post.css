@@ -1,0 +1,91 @@
+/* Make sure the background image covers the entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #ff6f61;  /* Header color */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header .subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main content area */
+main {
+    background: rgba(255, 255, 255, 0.8); /* Light background for content */
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form elements */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+/* Create Post Button */
+.btn-submit {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e55d4e;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffe0ac;
+    padding: 20px 0;
+    color: #ff6f61;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: auto;
+}

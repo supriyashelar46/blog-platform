@@ -1,0 +1,35 @@
+<!-- app/templates/update_post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Post</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/update_post.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Update Your Post</h1>
+        <p class="subheading">Make changes to your post and update it!</p>
+    </header>
+    
+    <main>
+        <form method="POST" class="form-container">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="{{ posts.title }}" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required class="form-control">{{ posts.content }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Update Post</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog Platform</p>
+    </footer>
+</body>
+</html>
